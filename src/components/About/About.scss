@@ -1,0 +1,49 @@
+.about-container {
+  margin: 0 3rem 6rem;
+
+  .aboutme-wrapper {
+    margin-bottom: 5rem;
+
+    .about-header {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .about-description {
+      font-size: 1.4rem;
+    }
+    .text-highlight {
+      color: var(--blue-sapphire);
+    }
+  }
+  .skills {
+    text-align: center;
+    .skills-header {
+      font-size: 2.6rem;
+    }
+  }
+  .tools-container {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .tool-box {
+      display: flex;
+      width: 16rem;
+      height: 6rem;
+      justify-content: center;
+      align-items: center;
+
+      .tool-name {
+        font-size: 1.5rem;
+        align-self: flex-end;
+      }
+      .tool-img {
+        width: 50%;
+        height: 4rem;
+      }
+    }
+  }
+}

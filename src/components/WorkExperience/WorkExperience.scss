@@ -1,0 +1,35 @@
+.work-experience-container {
+  margin: 0 3rem 6rem;
+
+  .work-experience-header {
+    font-size: 3rem;
+  }
+
+  .single-experience {
+    margin-bottom: 1.6rem;
+    .experience-divider {
+      border: 1px solid;
+    }
+  }
+  .experience-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    span {
+      min-width: 8rem;
+      font-size: 1.2rem;
+    }
+    .text-soft {
+      color: #878a8f;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experience-info {
+    span {
+      font-size: 0.6rem !important;
+    }
+  }
+}
