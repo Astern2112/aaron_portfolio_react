@@ -5,9 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   const tools = [
     { name: 'Java', img: images.java },
-    { name: 'HTML', img: images.html },
-    { name: 'CSS', img: images.css },
-    { name: 'JavaScript', img: images.javaScript },
+    { name: 'HTML/CSS', img: images.html },
     { name: 'TypeScript', img: images.typeScript },
     { name: 'React', img: images.react },
     { name: 'Sass', img: images.sass },

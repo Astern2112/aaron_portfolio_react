@@ -17,8 +17,12 @@ import profile from '../assets/profile.png';
 import logo from '../assets/logo.png';
 import figma from '../assets/figma.svg';
 import tailwind from '../assets/tailwind.svg';
+import stockHome from '../assets/stock-tracker-app-home.png';
+import todoApp from '../assets/todo-app.png';
 
 const images = {
+  todoApp,
+  stockHome,
   figma,
   tailwind,
   logo,
