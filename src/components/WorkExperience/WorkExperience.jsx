@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './WorkExperience.scss';
 const WorkExperience = () => {
   const experienceList = [
     {
@@ -68,19 +67,27 @@ const WorkExperience = () => {
     },
   ];
   return (
-    <motion.div>
-      <section id="Work-Experience" className="work-experience-container">
-        <h2 className="work-experience-header">WORK EXPERIENCE</h2>
-        <div className="work-experience-list-wrapper">
+    <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{
+        duration: 1,
+      }}
+    >
+      <section id="Work-Experience" className="p-4 ">
+        <h2 className="mb-4 text-3xl font-bold">Work Experience</h2>
+        <div>
           {experienceList.map((ex) => {
             return (
-              <div key={ex.id} className="single-experience">
-                <p className="experience-info">
-                  <span>{ex.companyName}</span>
-                  <span className="text-soft">{ex.position}</span>
-                  <span className="text-soft">{`${ex.startDate.month} ${ex.startDate.year} - ${ex.endDate.month} ${ex.endDate.year}`}</span>
+              <div key={ex.id} className="mb-4">
+                <p className="text-lg font-medium md:grid md:grid-cols-3">
+                  <span className=" block font-bold ">{ex.companyName}</span>
+                  <span className="block font-medium text-torea-bay-400">
+                    {ex.position}
+                  </span>
+                  <span className="block text-torea-bay-400">{`${ex.startDate.month} ${ex.startDate.year} - ${ex.endDate.month} ${ex.endDate.year}`}</span>
                 </p>
-                <hr className="experience-divider" />
+                <hr className="border-gray-400 my-2 border" />
               </div>
             );
           })}

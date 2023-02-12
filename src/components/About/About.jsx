@@ -1,22 +1,19 @@
 import React from 'react';
-import './About.scss';
-
 import { images } from '../../constants';
 import { motion } from 'framer-motion';
 
 const About = () => {
   const tools = [
+    { name: 'Java', img: images.java },
     { name: 'HTML', img: images.html },
     { name: 'CSS', img: images.css },
     { name: 'JavaScript', img: images.javaScript },
+    { name: 'TypeScript', img: images.typeScript },
     { name: 'React', img: images.react },
-    { name: 'Java', img: images.java },
     { name: 'Sass', img: images.sass },
+    { name: 'Tailwind', img: images.tailwind },
     { name: 'Git', img: images.git },
-    {
-      name: 'TypeScript',
-      img: images.typeScript,
-    },
+    { name: 'Figma', img: images.figma },
   ];
 
   return (
@@ -27,48 +24,69 @@ const About = () => {
         duration: 1,
       }}
     >
-      <section id="About" className="about-container">
-        <div className="aboutme-wrapper">
-          <h2 className="about-header hidden">ABOUT ME</h2>
-          <p className="about-description">
-            Hi i'm Aaron! I am junior Computer Science student at Dickinson
-            College. With a strong technical skill set, including proficiency in
-            <span className="text-highlight"> Java</span>,{' '}
-            <span className="text-highlight"> HTML</span>,{' '}
-            <span className="text-highlight"> CSS</span>,
-            <span className="text-highlight"> JavaScript</span>,{' '}
-            <span className="text-highlight"> TypeScript</span>,{' '}
-            <span className="text-highlight"> React</span>, and{' '}
-            <span className="text-highlight"> R</span>. I am constantly seeking
-            new challenges to expand my abilities.{' '}
+      <section id="About" className="px-8 py-12">
+        <div className="mb-12">
+          <h2 className="mb-4 text-3xl font-bold">About Me</h2>
+          <p className="text-lg font-light">
+            Hi I'm Aaron! I am Thai/Croatian junior Computer Science student at
+            Dickinson College. With a strong technical skill set, including
+            proficiency in
+            <span className="font-medium text-torea-bay-600"> Java</span>,{' '}
+            <span className="font-medium text-torea-bay-600"> HTML</span>,{' '}
+            <span className="font-medium text-torea-bay-600"> CSS</span>,
+            <span className="font-medium text-torea-bay-600"> JavaScript</span>,{' '}
+            <span className="font-medium text-torea-bay-600"> TypeScript</span>,{' '}
+            <span className="font-medium text-torea-bay-600"> React</span>, and{' '}
+            <span className="font-medium text-torea-bay-600"> R</span>. I am
+            constantly seeking new challenges to expand my abilities.{' '}
           </p>
-          <p className="about-description">
+          <br />
+          <p className="text-lg font-light">
             My passion for technology is demonstrated through my experience as a
             {` `}
-            <span className="text-highlight">Frontend Engineer Intern</span> at
-            Vendii, TAO BIN, my participation in the AT&T Summer Learning
-            Academy Externship and my personal projects showcased bellow. In
+            <span className="font-medium text-torea-bay-600">
+              Frontend Engineer Intern
+            </span>{' '}
+            at Vendii, TAO BIN, my participation in the AT&T Summer Learning
+            Academy Externship and my personal projects. I am{' '}
+            <span className="font-medium text-torea-bay-600">
+              {' '}
+              currently seeking an internship opportunity for the summer of 2023
+              as a software engineer intern, web developer intern, or frontend
+              intern.
+            </span>{' '}
+            I am also open to exploring analyst and project management roles. In
             addition to my technical expertise, I have a strong background in
             finance, which I developed through my internship as a{' '}
-            <span className="text-highlight">Finance Intern</span> at Gaysorn
-            Property Co. Ltd. Furthermore, I am fluent in English, Thai and have
-            an intermediate level of Chinese.
+            <span className="font-medium text-torea-bay-600">
+              Finance Intern
+            </span>{' '}
+            at Gaysorn Property Co. Ltd. Furthermore, I am fluent in English,
+            Thai and have an intermediate level of Chinese.
           </p>
-          <p className="about-description">
-            Outside of academics, I am a versity swimmer and co-founder of a
+          <br />
+          <p className="text-lg font-light">
+            Outside of academics, I am a varsity swimmer and co-founder of a
             voluntary Life-Saving service, a program that teaches kids
             throughout Thailand lifesaving and swimming skills. I am also a big
-            Formula One fan.
+            fan of Formula On.
           </p>
+          <p></p>
         </div>
-        <div className="skills">
-          <h2 className="skills-header">Tools and Technologies</h2>
-          <div className="tools-container">
+        <div>
+          <h2 className="my-4 text-center text-2xl font-bold">
+            Tools and Technologies
+          </h2>
+          <div className="flex flex-wrap justify-center">
             {tools.map((i) => {
               return (
-                <div id={i.name} key={i.name} className="tool-box">
-                  <img src={i.img} className="tool-img" alt={i.name} />
-                  <p className="tool-name">{i.name}</p>
+                <div
+                  id={i.name}
+                  key={i.name}
+                  className="m-5 flex items-center justify-center text-center"
+                >
+                  <img className="mx-4 h-16 w-16" src={i.img} alt={i.name} />
+                  <p className="mt-2 text-lg font-medium"> {i.name}</p>
                 </div>
               );
             })}

@@ -15,8 +15,12 @@ import envelope from '../assets/envelope.svg';
 import project4 from '../assets/project4.png';
 import profile from '../assets/profile.png';
 import logo from '../assets/logo.png';
+import figma from '../assets/figma.svg';
+import tailwind from '../assets/tailwind.svg';
 
 const images = {
+  figma,
+  tailwind,
   logo,
   html,
   envelope,

@@ -7,11 +7,9 @@ import {
   WorkExperience,
 } from './components';
 
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
+    <div className="bg-torea-bay-50">
       <Navbar />
       <Hero />
       <About />
