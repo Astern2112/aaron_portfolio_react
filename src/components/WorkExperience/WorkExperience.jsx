@@ -74,22 +74,20 @@ const WorkExperience = () => {
         duration: 1,
       }}
     >
-      <section id="Work-Experience" className="bg-white p-4 ">
-        <h2 className="text-3xl font-bold mb-4">WORK EXPERIENCE</h2>
+      <section id="Work-Experience" className="p-4 ">
+        <h2 className="mb-4 text-3xl font-bold">Work Experience</h2>
         <div>
           {experienceList.map((ex) => {
             return (
               <div key={ex.id} className="mb-4">
                 <p className="text-lg font-medium md:grid md:grid-cols-3">
-                  <span className="font-medium block text-gray-900 ">
-                    {ex.companyName}
-                  </span>
-                  <span className="font-medium block text-gray-600">
+                  <span className=" block font-bold ">{ex.companyName}</span>
+                  <span className="block font-medium text-torea-bay-400">
                     {ex.position}
                   </span>
-                  <span className="text-gray-600 block">{`${ex.startDate.month} ${ex.startDate.year} - ${ex.endDate.month} ${ex.endDate.year}`}</span>
+                  <span className="block text-torea-bay-400">{`${ex.startDate.month} ${ex.startDate.year} - ${ex.endDate.month} ${ex.endDate.year}`}</span>
                 </p>
-                <hr className="my-2 border border-gray-400" />
+                <hr className="border-gray-400 my-2 border" />
               </div>
             );
           })}

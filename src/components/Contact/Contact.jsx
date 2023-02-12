@@ -27,7 +27,7 @@ const Contact = () => {
       transition={{ duration: 1 }}
     >
       <section id="Contact" className="p-6">
-        <h2 className="text-3xl font-medium text-center">CONTACT</h2>
+        <h2 className="text-center text-3xl font-bold">Contact</h2>
         <div className="flex flex-row justify-center ">
           {socials.map((i) => {
             return (

@@ -53,11 +53,11 @@ const Projects = () => {
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
     >
-      <section id="Projects" className="bg-white p-4">
-        <h2 className="text-3xl text-center md:text-left font-bold mb-4">
-          PROJECTS
+      <section id="Projects" className=" p-4">
+        <h2 className="mb-4 text-center text-3xl font-bold md:text-left">
+          Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 ">
           {projectList.map((p) => {
             return (
               <div key={p.name} className="mb-4">
@@ -66,27 +66,27 @@ const Projects = () => {
                     src={p.img}
                     alt=""
                     loading="lazy"
-                    className="w-full h-64 object-cover rounded-sm"
+                    className="max-h-80 w-full rounded-sm object-cover"
                   />
                 </div>
-                <p className="text-lg font-medium mt-2  flex justify-between">
+                <p className="mt-2 flex justify-between  text-lg font-medium">
                   {p.name}
                   <span className="flex items-center">
                     <a href={p.website}>
                       <FaGithub
                         size={22}
-                        className="mr-2 hover:text-gray-500 text-gray-900"
+                        className="text-gray-900 hover:text-gray-500 mr-2"
                       />
                     </a>
                     <a href={p.website}>
                       <FaExternalLinkAlt
                         size={18}
-                        className="hover:text-gray-500 text-gray-900"
+                        className="text-gray-900 hover:text-gray-400"
                       />
                     </a>
                   </span>
                 </p>
-                <div className="mt-2 text-sm text-gray-700">
+                <div className="mt-2 text-sm text-torea-bay-400">
                   <ul className="inline-flex">
                     {p.tags.map((t) => {
                       return (

@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-full z-50"
+      className="fixed top-0 left-0 z-50 w-full bg-torea-bay-50"
       initial={{ x: '200vw' }}
       animate={{ x: 0 }}
       transition={{
@@ -36,42 +36,52 @@ const Navbar = () => {
     >
       <header
         id="Navbar"
-        className="flex justify-between items-center py-4 px-6 bg-white shadow-md"
+        className="bg-white flex items-center justify-between py-4 px-6 shadow-md"
       >
         <div>
           <a
-            className={`font-bold text-2xl ${
-              isOpen ? 'z-20 absolute top-4' : ''
+            className={`text-2xl font-bold ${
+              isOpen ? 'absolute top-4 z-20' : ''
             }`}
             href="/"
           >
             AS
           </a>
         </div>
-        <nav className={`LAPTOP-NAVBAR sm:block hidden`}>
+        <nav className={`LAPTOP-NAVBAR hidden sm:block`}>
           <ul className={`flex `}>
             <li className="mr-6">
-              <a href="#About" className={`pb-1 ${linkClasses}`}>
+              <a
+                href="#About"
+                className={`pb-1 hover:animate-pulse hover:text-torea-bay-700`}
+              >
                 About
               </a>
             </li>
             <li className="mr-6">
-              <a href="#Work-Experience" className={`pb-1 ${linkClasses}`}>
+              <a
+                href="#Work-Experience"
+                className={`pb-1 hover:text-torea-bay-700`}
+              >
                 Work Experience
               </a>
             </li>
             <li className="mr-6">
-              <a href="#Projects" className={`pb-1 ${linkClasses}`}>
+              <a href="#Projects" className={`pb-1 hover:text-torea-bay-700`}>
                 Projects
               </a>
             </li>
             <li className="mr-6">
-              <a href="#Contact" className={`pb-1 ${linkClasses}`}>
+              <a href="#Contact" className={`pb-1 hover:text-torea-bay-700`}>
                 Contact
               </a>
             </li>
             <li className="mr-6">
-              <a href={files.Resume} className={`pb-1 ${linkClasses}`} download>
+              <a
+                href={files.Resume}
+                className={`pb-1 hover:text-torea-bay-700`}
+                download
+              >
                 Resume
               </a>
             </li>
@@ -80,7 +90,7 @@ const Navbar = () => {
         <nav
           className={`MOBILE-NAVBAR ${
             isOpen
-              ? 'flex absolute w-full h-screen justify-center top-0 left-0 bg-white z-10'
+              ? 'absolute top-0 left-0 z-10 flex h-screen w-full justify-center bg-torea-bay-50'
               : 'hidden '
           }`}
         >

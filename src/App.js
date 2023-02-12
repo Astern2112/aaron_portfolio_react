@@ -9,7 +9,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <div className="bg-torea-bay-50">
       <Navbar />
       <Hero />
       <About />
