@@ -7,44 +7,43 @@ const Projects = () => {
   const projectList = [
     {
       name: 'Stock Tracker App',
-      img: images.project1,
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      type: 'Full-Stack',
+      img: images.stockHome,
+      tags: ['React', 'Bootstrap', 'Axios', 'Apex Charts'],
+      type: 'React App',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
-      website: '',
-      github: '',
+        'A stock tracker app that you can track stock prices, market news and company news. Built with React... still in progress',
+      website: 'https://stock-tracker-app-24aa5.web.app/',
+      github: 'https://github.com/Astern2112/stock-tracker-app',
     },
     {
       name: 'Todo App',
-      img: images.project2,
-      tags: ['HTML', 'CSS', 'React'],
-      type: 'Web App',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
-      website: '',
-      github: '',
+      img: images.todoApp,
+      tags: ['React', 'Tailwind'],
+      type: 'React App',
+      description: 'Simple todo app where you can add and delete todos',
+      website: 'https://todo-app-aaron21.netlify.app/',
+      github: 'https://github.com/Astern2112/react-todo-app',
     },
-    {
-      name: 'Project 3',
-      img: images.project3,
-      tags: ['Java'],
-      type: 'Mobile App',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
-      website: '',
-      github: '',
-    },
-    {
-      name: 'Project 4',
-      img: images.project4,
-      tags: ['Java'],
-      type: 'Mobile App',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
-      website: '',
-      github: '',
-    },
+    // {
+    //   name: 'Project 3',
+    //   img: images.project3,
+    //   tags: ['Java'],
+    //   type: 'Mobile App',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
+    //   website: '',
+    //   github: '',
+    // },
+    // {
+    //   name: 'Project 4',
+    //   img: images.project4,
+    //   tags: ['Java'],
+    //   type: 'Mobile App',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
+    //   website: '',
+    //   github: '',
+    // },
   ];
 
   return (
@@ -61,7 +60,7 @@ const Projects = () => {
           {projectList.map((p) => {
             return (
               <div key={p.name} className="mb-4">
-                <div className="relative">
+                <div className="relative shadow-sm ">
                   <img
                     src={p.img}
                     alt=""
@@ -72,16 +71,16 @@ const Projects = () => {
                 <p className="mt-2 flex justify-between  text-lg font-medium">
                   {p.name}
                   <span className="flex items-center">
-                    <a href={p.website}>
+                    <a href={p.github} target="_blank" rel="noreferrer">
                       <FaGithub
                         size={22}
-                        className="text-gray-900 hover:text-gray-500 mr-2"
+                        className=" mr-2 hover:text-torea-bay-900"
                       />
                     </a>
-                    <a href={p.website}>
+                    <a href={p.website} target="_blank" rel="noreferrer">
                       <FaExternalLinkAlt
                         size={18}
-                        className="text-gray-900 hover:text-gray-400"
+                        className=" hover:text-torea-bay-900"
                       />
                     </a>
                   </span>
@@ -91,7 +90,7 @@ const Projects = () => {
                     {p.tags.map((t) => {
                       return (
                         <li key={`${p.img}-${t}`} className="mr-2">
-                          {t}
+                          • {t}
                         </li>
                       );
                     })}
