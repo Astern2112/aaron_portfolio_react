@@ -69,7 +69,8 @@ const About = () => {
             Outside of academics, I am a varsity swimmer and co-founder of a
             voluntary Life-Saving service, a program that teaches kids
             throughout Thailand lifesaving and swimming skills. I am also a big
-            fan of Formula On.
+            fan of Formula One. The high-speed, high-tech and high-stakes nature
+            of the sport has always fascinated me.
           </p>
           <p></p>
         </div>
