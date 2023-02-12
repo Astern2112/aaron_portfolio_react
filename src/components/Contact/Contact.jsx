@@ -1,5 +1,4 @@
 import React from 'react';
-import './Contact.scss';
 import { images } from '../../constants';
 import { motion } from 'framer-motion';
 
@@ -27,20 +26,20 @@ const Contact = () => {
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
     >
-      <section id="Contact" className="contact-container">
-        <h2 className="contact-heading">CONTACT</h2>
-        <div className="social-icons">
+      <section id="Contact" className="p-6">
+        <h2 className="text-3xl font-medium text-center">CONTACT</h2>
+        <div className="flex flex-row justify-center ">
           {socials.map((i) => {
             return (
               <a
                 key={i.name}
                 href={i.url}
                 type=""
-                className="social-icons"
                 target="_blank"
                 rel="noreferrer"
+                className="m-4"
               >
-                <img src={i.img} alt={i.name} className="social-icon" />
+                <img src={i.img} alt={i.name} className="h-12 w-12" />
               </a>
             );
           })}

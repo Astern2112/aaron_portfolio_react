@@ -1,9 +1,0 @@
-.App {
-  /* margin: 0 4rem;*/
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-}
-
-@media (max-width: 600px) {
-}

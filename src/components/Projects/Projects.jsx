@@ -1,5 +1,4 @@
 import React from 'react';
-import './Projects.scss';
 import { images } from '../../constants/';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -54,44 +53,49 @@ const Projects = () => {
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
     >
-      <section id="Projects" className="projects-container">
-        <h2 className="header">PROJECTS</h2>
-        <div className="projects-wrapper">
+      <section id="Projects" className="bg-white p-4">
+        <h2 className="text-3xl text-center md:text-left font-bold mb-4">
+          PROJECTS
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           {projectList.map((p) => {
             return (
-              <div key={p.name} id={p.name} className="project-card">
-                <div className="project-image-container">
-                  {/* <a href={p.website}> */}
+              <div key={p.name} className="mb-4">
+                <div className="relative">
                   <img
-                    className="project-image"
                     src={p.img}
                     alt=""
                     loading="lazy"
+                    className="w-full h-64 object-cover rounded-sm"
                   />
-                  {/* </a> */}
                 </div>
-                <div className="project-description">
-                  <p className="project-title">{p.name}</p>
-                  <ul className="project-tags">
+                <p className="text-lg font-medium mt-2  flex justify-between">
+                  {p.name}
+                  <span className="flex items-center">
+                    <a href={p.website}>
+                      <FaGithub
+                        size={22}
+                        className="mr-2 hover:text-gray-500 text-gray-900"
+                      />
+                    </a>
+                    <a href={p.website}>
+                      <FaExternalLinkAlt
+                        size={18}
+                        className="hover:text-gray-500 text-gray-900"
+                      />
+                    </a>
+                  </span>
+                </p>
+                <div className="mt-2 text-sm text-gray-700">
+                  <ul className="inline-flex">
                     {p.tags.map((t) => {
                       return (
-                        <li key={`${p.img}-${t}`} className="p-tag">
+                        <li key={`${p.img}-${t}`} className="mr-2">
                           {t}
                         </li>
                       );
                     })}
                   </ul>
-                  <div className="project-links-container">
-                    <a href={p.website} className="project-link">
-                      <FaGithub className="project-link-icon" size={22} />
-                    </a>
-                    <a href={p.website} className="project-link">
-                      <FaExternalLinkAlt
-                        className="project-link-icon"
-                        size={18}
-                      />
-                    </a>
-                  </div>
                 </div>
               </div>
             );

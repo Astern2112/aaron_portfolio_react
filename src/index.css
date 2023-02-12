@@ -11,26 +11,25 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: proximity;
-}
-body {
-  margin: 0 4rem;
-  font-family: 'PP Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
-  /* font-family: 'Space Mono', monospace; */
-  background-color: #eeeeee;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-padding-top: var(--scroll-padding);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 0.2rem;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.link-underline:hover {
+  background-size: 100% 0.2rem;
+  background-position: 0 100%;
 }
