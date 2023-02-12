@@ -1,4 +1,5 @@
 .header-container {
+  margin-top: 0.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,10 +8,19 @@
   width: calc(100%);
   // backdrop-filter: blur(10px);
   .header-logo {
+    background-color: var(--raisin-black);
+    width: 3.4rem;
+    height: 3.4rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     a {
       text-decoration: none;
       font-size: 2rem;
-      color: var(--raisin-black);
+      color: var(--page-bg);
       .header-logo-firstname {
         font-weight: bolder;
       }
@@ -51,6 +61,15 @@
       }
     }
   }
+}
+
+.header-logo::before {
+  position: absolute;
+  content: '';
+  border: 0.18rem solid var(--raisin-black);
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
 }
 
 .nav-burger-menu {

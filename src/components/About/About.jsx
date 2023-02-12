@@ -31,7 +31,7 @@ const About = () => {
         <div className="aboutme-wrapper">
           <h2 className="about-header hidden">ABOUT ME</h2>
           <p className="about-description">
-            Hi i'm Aaron! I am junior Computer Science student at Dickinson
+            Hi I'm Aaron! I am junior Computer Science student at Dickinson
             College. With a strong technical skill set, including proficiency in
             <span className="text-highlight"> Java</span>,{' '}
             <span className="text-highlight"> HTML</span>,{' '}
@@ -55,7 +55,7 @@ const About = () => {
             an intermediate level of Chinese.
           </p>
           <p className="about-description">
-            Outside of academics, I am a versity swimmer and co-founder of a
+            Outside of academics, I am a varsity swimmer and co-founder of a
             voluntary Life-Saving service, a program that teaches kids
             throughout Thailand lifesaving and swimming skills. I am also a big
             Formula One fan.
