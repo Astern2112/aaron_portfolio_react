@@ -19,8 +19,10 @@ import figma from '../assets/figma.svg';
 import tailwind from '../assets/tailwind.svg';
 import stockHome from '../assets/stock-tracker-app-home.png';
 import todoApp from '../assets/todo-app.png';
+import chatGPTClone from '../assets/chatGPTClone.png';
 
 const images = {
+  chatGPTClone,
   todoApp,
   stockHome,
   figma,
