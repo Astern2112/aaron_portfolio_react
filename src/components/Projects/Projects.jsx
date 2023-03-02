@@ -6,6 +6,16 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projectList = [
     {
+      name: 'Rick and Morty Wiki',
+      img: images.rickAndMorty,
+      tags: ['React', 'Tailwind', 'React Query', 'React Router'],
+      type: 'Mobile App',
+      description:
+        'A Wiki page for the tv show rick and morty using the rick and morty API. Contains information for Characters, Episodes and Locations up until season 3',
+      website: 'https://rickandmorty-wiki-aaron.netlify.app/',
+      github: 'https://github.com/Astern2112/rick-and-morty-wiki',
+    },
+    {
       name: 'Stock Tracker App',
       img: images.stockHome,
       tags: ['React', 'Bootstrap', 'Axios', 'Apex Charts'],
@@ -15,6 +25,7 @@ const Projects = () => {
       website: 'https://stock-tracker-app-24aa5.web.app/',
       github: 'https://github.com/Astern2112/stock-tracker-app',
     },
+
     {
       name: 'Open AI Chat GPT Clone',
       img: images.chatGPTClone,
@@ -34,16 +45,6 @@ const Projects = () => {
       website: 'https://todo-app-aaron21.netlify.app/',
       github: 'https://github.com/Astern2112/react-todo-app',
     },
-    // {
-    //   name: 'Project 4',
-    //   img: images.project4,
-    //   tags: ['Java'],
-    //   type: 'Mobile App',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel amet autem porro! Pariatur, ipsa voluptate amet ipsum, laudantium, possimus sapiente eligendi quis repellat eos vero aliquid. Perspiciatis, neque? Blanditiis?',
-    //   website: '',
-    //   github: '',
-    // },
   ];
 
   return (
@@ -87,7 +88,7 @@ const Projects = () => {
                     {p.tags.map((t) => {
                       return (
                         <li key={`${p.img}-${t}`} className="mr-2">
-                          • {t}
+                          {t}
                         </li>
                       );
                     })}

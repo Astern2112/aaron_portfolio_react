@@ -20,8 +20,10 @@ import tailwind from '../assets/tailwind.svg';
 import stockHome from '../assets/stock-tracker-app-home.png';
 import todoApp from '../assets/todo-app.png';
 import chatGPTClone from '../assets/chatGPTClone.png';
+import rickAndMorty from '../assets/rick-and-morty-wiki.png';
 
 const images = {
+  rickAndMorty,
   chatGPTClone,
   todoApp,
   stockHome,

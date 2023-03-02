@@ -1,10 +1,12 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "predeploy": [
+      "npm run build",
+      "git add -A",
+      "git commit -m 'firebase deploy'",
+      "git push origin main"
     ],
     "rewrites": [
       {
