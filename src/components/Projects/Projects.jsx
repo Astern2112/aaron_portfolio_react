@@ -26,16 +26,16 @@ const Projects = () => {
       github: 'https://github.com/Astern2112/stock-tracker-app',
     },
 
-    {
-      name: 'Open AI Chat GPT Clone',
-      img: images.chatGPTClone,
-      tags: ['HTML', 'CSS', 'Javascript', 'NodeJS', 'Express', 'OpenAI'],
-      type: 'Web App',
-      description:
-        "A clone of ChatGPT made by open AI. Built using open AI's public API specifically the text-davinci-003 Model. ",
-      website: 'https://open-ai-chat-clone.vercel.app/',
-      github: 'https://github.com/Astern2112/openAiChatClone/tree/main',
-    },
+    // {
+    //   name: 'Open AI Chat GPT Clone',
+    //   img: images.chatGPTClone,
+    //   tags: ['HTML', 'CSS', 'Javascript', 'NodeJS', 'Express', 'OpenAI'],
+    //   type: 'Web App',
+    //   description:
+    //     "A clone of ChatGPT made by open AI. Built using open AI's public API specifically the text-davinci-003 Model. ",
+    //   website: 'https://open-ai-chat-clone.vercel.app/',
+    //   github: 'https://github.com/Astern2112/openAiChatClone/tree/main',
+    // },
     {
       name: 'Todo App',
       img: images.todoApp,
