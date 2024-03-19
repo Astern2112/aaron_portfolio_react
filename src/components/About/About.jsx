@@ -5,13 +5,15 @@ import { motion } from 'framer-motion';
 const About = () => {
   const tools = [
     { name: 'Java', img: images.java },
-    { name: 'HTML/CSS', img: images.html },
+    // { name: 'Python', img: images.python },
+    { name: 'HTML', img: images.html },
     { name: 'CSS', img: images.css },
     { name: 'JavaScript', img: images.javaScript },
     { name: 'TypeScript', img: images.typeScript },
     { name: 'React', img: images.react },
     { name: 'Sass', img: images.sass },
     { name: 'Tailwind', img: images.tailwind },
+    // { name: 'SQL', img: images.sql },
     { name: 'Git', img: images.git },
     { name: 'Figma', img: images.figma },
   ];
@@ -32,12 +34,12 @@ const About = () => {
             Dickinson College. With a strong technical skill set, including
             proficiency in
             <span className="font-medium text-torea-bay-600"> Java</span>,{' '}
+            <span className="font-medium text-torea-bay-600"> Python</span>,{' '}
             <span className="font-medium text-torea-bay-600"> HTML</span>,{' '}
             <span className="font-medium text-torea-bay-600"> CSS</span>,
-            <span className="font-medium text-torea-bay-600"> JavaScript</span>,{' '}
             <span className="font-medium text-torea-bay-600"> TypeScript</span>,{' '}
             <span className="font-medium text-torea-bay-600"> React</span>, and{' '}
-            <span className="font-medium text-torea-bay-600"> R</span>. I am
+            <span className="font-medium text-torea-bay-600"> SQL</span>. I am
             constantly seeking new challenges to expand my abilities.{' '}
           </p>
           <br />

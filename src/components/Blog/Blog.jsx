@@ -1,0 +1,52 @@
+import React from 'react'
+import { motion } from 'framer-motion';
+
+const Blog = () => {
+
+
+    const blogs = [{
+        title: "Dickinson College Experience Reflective Blog Post",
+        author: "Aaron Stern",
+        date: "03/18/2024"
+    }]
+  return (
+    <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <section id="Blogs" className=" p-4">
+        <h2 className="mb-4 text-center text-3xl font-bold md:text-left">
+          Blog
+        </h2>
+        <article className="">
+          {blogs.map((b) => {
+            return (
+                <article className='mx-3'>
+                    <h4 className=' text-lg mb-3 font-semibold'>{b.title}</h4>
+                    <p className=''>by {b.author}</p>
+                    <p className=' my-5'>Since I was young, I have always been curious about technology, how it works, how it is made and how can I make it myself. I became interested in computer science towards the end of high school after taking a new computer science class that was offered. I enjoyed the creativity and innovation that comes with developing software, whether it may be a video game, website, or coming up with a simple algorithm to solve a problem. It provides the opportunity to explore and develop solutions to real-world problems. When I arrived at Dickinson College four years ago, I knew I wanted to explore my interest in computer science further. Still, I could never have imagined the incredible journey of growth I would experience. In a liberal arts setting, I got the chance to explore my interests in other disciplines, including data analytics, business, and economics. Through rigorous coursework, labs, hands-on projects, and community involvement, Dickinson has shaped me into a confident problem solver who thinks outside the box and a global citizen.  </p>
+                    <p className=' my-5'>My first computer science course at Dickinson was Principles of Object-Oriented Design (COMP 132), I was able to skip the Introduction to Programming class (COMP 130) as I already had some programming knowledge. From concepts of objects and classes to abstraction and inheritance, I learned about the importance of object-oriented software design. I enjoyed the engaging hands-on projects in labs that were relatable to real-world events. One lab that I particularly enjoyed in that class was Darwin's World. Nick Parlante created this game at Stanford University; our task was to make our own creature with characteristics that could overpower the other species in the world and be the last species alive. This lab was both fun and interactive, with a competitive aspect. It taught us essential inheritance and testing concepts used in everyday software development. A challenge I had in this course that stands out is my encounter with recursion. The idea of recursion was unnatural and different from anything I had seen before; however, with perseverance and support from my professor and peers, I was able to grasp recursion and understand how it is used in exciting concepts to create cool patterns like the Sierpinski Triangle. </p>
+                    <p className=' my-5'>While I furthered my studies at Dickinson, I discovered my interest in the new data analytics courses, such as Introduction to Data Science (DATA 180), which was taught in the R programming language. This language was very different to me as the syntax was not similar to Python or Java. I enjoyed the idea of how we can tell a story based on numbers using data analysis techniques from machine learning, visualizations, and predictive modeling. I continued my interest in this and took Data Systems for Data Analytics (DATA 200) in a later semester, which introduced data analysis in Python and the use of SQL for data manipulation. These courses taught me essential skills widely used in the professional field, and I have applied them in interviews for internships. Taking classes in data analytics and computer science allowed me to gain insight into the different possible career paths that can be taken while pursuing a career in tech.</p>
+                    <p className=' my-5'>The computer science program offered by Dickinson has helped me gain a deep understanding of core computer science concepts that are relevant in the real world. Specifically, courses such as Data Structures and Problem Solving (COMP 232) and Analysis of Algorithms (COMP 332) equipped me with advanced problem-solving techniques, design patterns, complex analysis, and applications of common data structures and algorithms that are commonly used in real-world software development. Additionally, mastering the skill of asymptotic analysis of algorithms has been particularly beneficial since it's a common topic in coding job interviews. Furthermore, studying fundamental algorithm designs like divide and conquer has given me versatile problem-solving strategies that I can apply in various real-world scenarios. Overall, these skills and knowledge have not only enhanced my academic pursuits but also laid a solid foundation for my future endeavors in the field of computer science.</p>
+                    <p className=' my-5'>In Tools and Techniques for Software Development (COMP 190), I gained proficiency in essential skills for software developers, including navigating the Unix command line, scripting with shell scripting, and utilizing version control with GitHub. These foundational skills are indispensable in the day-to-day tasks of a software developer. Moreover, the course introduced me to Humanitarian Free and Open Source Software (HFOSS) projects, providing hands-on experience contributing to meaningful open-source initiatives. One highlight of the course was the opportunity to delve into front-end development using Vue.js. Working on Dickinson's open-source project, Farm Data 2, allowed me to apply my newfound skills in a real-world setting, contributing to a project with a tangible impact and discovering the positive impact free software has on society. Exploring front-end development was particularly rewarding for me, as I found it more engaging and enjoyable than previous coursework. The ability to create user-facing products and witness the direct impact on end-users sparked my passion for front-end development. This new interest translated into practical experience when I secured two internship positions as a front-end developer and full-stack developer at startups, leveraging the skills and knowledge gained from the classroom to excel in my role.</p>
+                    <p className=' my-5'>One of the most rewarding aspects of Dickinson's education is the small classroom size and the opportunity for engagement and collaboration. Whether it was working on group projects in software engineering or contributing to free, open-source software, I learned the importance of effective communication, cooperation, and planning/ managing a project. Learning applicable agile development techniques like scrum, kanban, and extreme programming has helped me effectively manage projects. These collaborative experiences have not only helped me on my academic journey but have also prepared me for the dynamic challenges of the professional world.</p>
+                    <p className=' my-5'>In a number of my computer science classes, I had the opportunity to present my work through oral presentations. This experience challenged me to make my ideas clear and concise for the audience and improved my presentation skills. Although I was not confident in giving presentations, I practiced and received constructive feedback which helped me to effectively communicate my ideas. In my sophomore year Artificial Intelligence class (COMP 364), I gave a 30-minute presentation on AI-Driven Accounts Payable Transformation, which I later realized should have only been 20 minutes. However, with practice, I was able to improve my presentation skills and ability to communicate effectively. Dickinson has provided me with a solid foundation to talk about my work, which is an important skill to have.
+
+</p>
+                    <p className=' my-5'>Throughout my time at Dickinson College, I have actively participated in conversations about the social, legal, and ethical issues related to the tech industry. These discussions have enabled me to explore the ethical implications of artificial intelligence, including legal liability in the event of an autonomous vehicle accident, cybersecurity challenges, and data privacy and ownership issues. As a result of these experiences, I have a comprehensive understanding of the ethical responsibilities that come with working in the field of computer science. Thanks to Dickinson's emphasis on ethical awareness and critical inquiry, I have learned how to navigate complex ethical dilemmas with integrity and compassion. Whether it is considering the ethical implications of data privacy or advocating for ethical AI practices, I am committed to being a responsible global citizen, dedicated to using technology to benefit society positively. </p>
+                    <p className=' my-5'>As I conclude my reflective journey, I am grateful for the transformative experiences and valuable lessons learned during my time at Dickinson. From conquering recursion to embracing the complexities of decision trees in artificial intelligence, my experience as a computer science major has been very challenging but rewarding. As I embark on the next chapter of my life, I will always cherish the memories I made and what I learned with me. I am grateful for how Dickinson has shaped me into the scholar and global citizen I am today. Through rigorous coursework, discussions, and collaborative projects, I have not only gained valuable technical skills but also gained a deeper understanding of technology, society, and its global impact. I am confident that my Dickinson education has equipped me with the knowledge, skills, and values necessary to thrive in an ever-changing world. </p>
+                    <div className=''>
+                      <p className=' text-gray-400 text-sm'>Published: {b.date}</p>
+                      </div>   
+                </article>
+                
+              );
+          })}
+        </article>
+      </section>
+    </motion.div>
+  )
+}
+
+export default Blog

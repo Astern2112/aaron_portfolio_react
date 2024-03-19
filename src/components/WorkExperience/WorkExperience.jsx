@@ -4,6 +4,27 @@ const WorkExperience = () => {
   const experienceList = [
     {
       id: 1,
+      companyName: 'The Grooker Group PCL',
+      position: 'Full-Stack Developer Intern (Digital Assets)',
+      startDate: {
+        day: '05',
+        month: 'June',
+        year: '2023',
+      },
+      endDate: {
+        day: '15',
+        month: 'August',
+        year: '2022',
+      },
+      location: {
+        country: 'Thailand',
+        city: 'Bangkok',
+        state: '',
+        remote: 'in-person',
+      },
+    },
+    {
+      id: 2,
       companyName: 'Vendi, TAO BIN',
       position: 'Front-End Engineer Intern',
       startDate: {
@@ -24,7 +45,7 @@ const WorkExperience = () => {
       },
     },
     {
-      id: 2,
+      id: 3,
       companyName: 'AT&T',
       position: 'Summer Learning Academy Extern',
       startDate: {
@@ -45,7 +66,7 @@ const WorkExperience = () => {
       },
     },
     {
-      id: 3,
+      id: 4,
       companyName: 'Gaysorn Property Co. Ltd.',
       position: 'Finance Intern',
       startDate: {
